@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="book.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Reading Club</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img
+      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEhAQEhAQEhAQEw8SEBUPDxEQEhIRFxUWFhYRFRcYHCklGBslGxUXITEhMSkrMS4uFyAzODMsNygtLisBCgoKDg0OGxAQGy0mICUtLSsrLy8tLTUtKy8tMC0tNS0vLS0tLTAtLy0vLS0uKy0tLS0tLS0tLS0tNy0tLS0tLf/AABEIAMEBBQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAgUDBAYHAQj/xABGEAACAQICBgQMBAMECwAAAAAAAQIDEQQSBSExQVFxBmGBkQcTIiMyQlJyobHBwmKS0fAUouEVU3OyFjNDVGOCg7PS4vH/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAYCAwUB/8QANBEAAgECAgYIBgIDAQAAAAAAAAECAxEEIQUSMXGBsTJBUWGRocHREyIzsuHwNFIVJGJC/9oADAMBAAIRAxEAPwD3EAAAAAAAAAAAAAAAAAAAAAHxmB4qmts4LnOJ5JqO3I9Sb2I2Aa/8XS/vKf54ko1ovZKL5NM8U4vYz1wktqZmABlaxiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHOpGKbk0ktrbsis0npmFK8Y2nU4blzf0+RzeJxlSq7zk29y2W7NxysZpalh3qx+aXZ1Le/TxsTKGCnUV3kv3qOhxWnoR1Qi5vi9S/qVdfTFafr5Vwgvrt+JXqHEmit19K4mrtlZdkcl7vi2dKGFpQ2K+/MTnKWt3vxd/qMrPuYZjmt3d3tN931HyzPji+BLMMx5l1pC7J0sVUh6M5R5X+RvYfT9WPpJTX5fitXwK+5BpEujja9L6c2uXg7ryNc6UJ9KKf727TqsJpalU1Xyy4T1dz2Msjz+UXzN/R+malKyflw4N61yf0O9hNO3yrrivVe19xBraP66b4P3OxBq4LGwrRzQd+Kepp8GjaLDGSklKLumc1pp2YABkeAAAAAAAAAAAAAAAAAAAAAAAAA5nTendtKi9eyU1u6o/qOkmmLXo03r9eS3fhX1OcpRvr3Fe0rpNxvRpO3U36L1fBHVweEVlUmty9X6GWEb8jKtRC4zFXZ0nmZLi5jzDMeWFjJcXMeYZhYWMlxcx5hmFhYyXFzHmGYWFjJchONz5mGYJCx9oYidKSlF5ZLua+qOv0TpOOIjwnH0o/VcUcdLWYqNadKSlF2lHWn+9x1dH6QnhpW2xe1eq7+fmo+Iw0a0e/qfv3cj0gFforSEa8My1SWqcfZf6FgXOE4zipRd09hwpRcW4y2oAAyMQAAAAAAAAAAAAAAAAAAVWntJeIpNr/AFk7xprr3vs/QtTzrT+kPH1pNO8I+RT5Lf2vX3EDSOJdCj8vSeS9Xw52JeCofFqZ7Ft9v3quasLybbbe9t7WzZuYaasrErlJlmzvmXMMxjim2kk23sSV2y3wugpy1zkoLh6Uv0Rtw+Fq13anG/LxeXC+41VKsKavN2KzMMx0dPQlFbVOXOVvkfZ6EoPYpLlP9bnR/wAFirbY+L9iL/kKPf4fk5vMMxbYrQMlrpyzdT1dz2P4FNNOLaaaa2p6mjn4jB1sO7VI27+p7n6OzJVKtCqrwdyeYZjHc2MHg6lV2gtS2t6kubNUKcpyUYK7fUjOTUVdvIx5hmL6hoCC9Obk+qyRsf2NQ9n+eX6nUjoPFSV3qre/ZNeZDekKKfW9y92jmcwzF/W0BTfoylF9dmv32lTjdGVaWtrNH2o60ua3EfEaLxNBa0o3Xas/zxtY20sVSqOyefYzWzEaiuiFxcgok2MuidISoVVLXl2VFxX6raj0GnNSSkneLSaa2NPWmeZYhb+86vobpDPGVGT10/Kj7jetdj+aLFobF2fwXsea39nHnvOdpChrR+Itq27vxy3HTAAshxgAAAAAAAAAAAAAAAAACp6S43xNCo1qlLzcOctr7Fd9h57hld8joun+L8qjSvsjKo+beWPyl3nPYb0eZVdM1datq/1VvHN+h39H09Sin/bP0Nm4uQuLnFZOOt0HhIwpxnby5q7fC+xIsrmpo5+ape5D5Gxcv2Gpxp0oxiskl+8Sr1pOVSTfaydxchcXNxqJ3K7TOAVWLkl5yK1fiXsv6G9cXNdajCtB05rJ/t966jOFSVOSlHajj8BhnWnGC2PXJ8Etr/fE7GhSjCKjFWitiKPQaXjcR1Npcs0tXwLu5zND4aNOi5/+m2m+5O1vK7JukKrlU1epW88ydxchcXOuc8ncXIXFwDmtP4WNOacVaM03bcmtturWiruXXSp66XKf2lFcpOkqcYYqcYqyuvNJ82WTBycqEW+/m0Slr1DRGNdCvTnujK0/deqXw19hG5pYrbzRHoTcJJx2rNcCQ4qScXsZ68Cs6PYrxuHoz35cr5x8lv4FmXyE1OKktjV/Eqs4uMnF9TsAAZGIAAAAAAAAAAAAAAB5l0xr5sXU4QyxXZFN/Fs1Yakl1IxdIJ5sViP8aa7pW+hO5Sca71ZN/wBpcy10Y6tOK7lyRkuLmO4uRGsjadzo5+ape7D5Gzc09GvzVL3IfI2bl+p9BblyRUqnTlvfMncXIXFzIwJ3FyFxc9QZUaDfncT733SLq5Q6DfnsT733SLu5B0f9Bb5/fIl436z3R+1E7i5C4uTSITuLkLi4BQ9Knro8qn2lFcuulb10eVT7ShuU7Sn8ufD7UWTAfx48ebMlzWxmxPrMtzBjH5PaiFDpImHcdAK2ahOPsVXbk4xfzudQcT4Np3WKW5Oi+/OvodsXPR7vhobreDaK1jo2xEvHxSYABMIgAAAAAAAAAAAAAAB470g8nFYlf8aq++Tf1MlyfTalkxtfhJwku2Eb/G5ghO6T4pFMxkLVZL/qXMt1F61OL7UuRkuLmO4uQ2sjad7o1+ape5D5Gxc1dGPzVH3IfI2Ll8h0VuKfV6ct75kri5G4uZGBK59uQuLnqDKfQT89ive+6RdXKHQT89ive+5l5chYD6HGX3SJmO+u90ftRK4uRuLkwhkri5G4uAUPSx66PKp9pz1y96WvXR5T+0565UdJr/bnw+1Fn0f/ABocfuZkuYMZLye1E7mtj56kuv8AfzIUF8yJh2PgyWrFProL/ufqd0cd4NKVqFWftVbLlGMfq2diXHAR1cPBcfFtlYx7viJ8F4JAAEshgAAAAAAAAAAAAAAHm/hPw2WrQq7pwcHzg7/KfwOcwdS8V1aj0bp5o/x2EqNK8qDVaPKN1L+VyfYjyvAVbNx47OaK3pSi41W+3P0ZZtGVNegl1rL28i1zDMYbi5yGsjoWO/0Y/NUv8OHyNm5p6LfmqPuQ+RDGaVo0dUpXl7MfKl/TtLrGcYU1KTsrLaU+UJTqyjFXd3s3m/cXOdqdKV6tNvnJL4JMjDpSt9HV1Tv80RnpLCp21/KXsb/8dibX1POPudJcXK7A6Yo1dSllk/Vnqb5bmb9yZTqRmtaDuu4iVKc6b1Zqz7yl0C/PYr3vukXlyg0A/PYr3n/nZd1KiinKTSS2tuyRGwP0eMvukSsf9d7o/ajJcXKTE9I6MdUc0uteTHvev4Gn/pS/7lfn/wDU8npDDRdnPwu+SEdH4mSuoeLS5u509xcoaHSam/TjKPWrTX0fwLfD4mFRZoSUl1PZ1PgbqWJpVehJPn4PPyNNXD1aXTi1y8Vl5lJ0ueujyn9pz+Yu+l710eU/tOeuVnSX8qfDkix6OX+tDjzZmuV+PqeVbgv39DalO2vcjV0VhHisRSor/aTSdt0Nsn2RT7iPQg5Sy/bkuTUVd7EesdDcJ4rB4dPbKPjH/wA7zL4NLsLwhCKSSSskkkuCJlzhBQiorYsimzm5ycn1u/iAAZGIAAAAAAAAAAAAAABCcE001dPU09jXA8Q6SaNlg8TUpa8t89JvfB6487a4vriz3I5Pp/oB4uh4ynG9eheUUts4+tT63quutW3kPG0Pi08tqzXqjoaOxKo1bS2Syfd2P97TzulVUkmt/wC7ErlTgsVldm/Jl8HxLTMVacNVlpLSWmqvi40otRUVa6um1z3Fc5kMwzHtSrOpbXd7ZI1wpQp31Fa+b7yVxcjmGY12MyVzp+j2mHJqjUd36kntdvVf6nLZj7TquLUk7OLTT4Na0yRhcRKhU148V2r92GjFYaOIpuEuD7H+7TqNC1VGrjJSdoxbbfBKUin0rpSdeWvVBbFw63xZr1Ma3422pVpKUuSd7d7Xca2Y3V8S5U1Sj0byb77yb5WNdLCqNV1ZLPJLutFLzd+G8lcXI5hmINiWSuZsPiZ03mhJxlxT+D4mvmGY9V07oNJqzLDSOk518mZJZE15N1e+1/A0bkcxjrVlFNv/AOvgZzlOpLWk7tmMKcacdWKsjFpCvZZd728jtfBdon08ZJbb06V/55rtSj2SOH0No+pjcRClDbN3lK11GK9KT6kvjZbz3LA4OFCnClBWhTioxXUuPF9Z2dG4bPXfVz/By9K4jUh8JbZbd355XNoAHbK6AAAAAAAAAAAAAAAAAAAAAeUeEboq6UpYyjHzUnetFL0Jt+mvwyfc+p6uSwOM2Qk/df0Z+gKtNSTjJKUZJppq6aepprejyHp10KlhXLEYdOWGeuUVdyo8+MOvdv4nJx2CveUVv9ywaNx6klSqPPqfb3b+zt37a24zFPhMfbyZa1ue9cyyjNPWndPgcKdNx2nbM1xcxXFzGx6Zbi5iuLiwMlz7cxXFxYGW4uYri4sDLcXMVzFXxMYK7fJb2FG+wGxOooptuyRV1Kk604xjFyzNRpxirtt6kkt7Ziz1K84whGTbeWnCCbbfBLez1zoP0Njgkq1ZKWKkucaSe2MeMuMuxart9LCYKU3+5fkh4zFww8Lva9i7fwbnQro2sDR8uzxFWzqyWtR4UovguO99lunALDCChFRjsKlUqSqTc5PNgAGRgAAAAAAAAAAAAAAAAAAAAAD4z6ADzjpd4Oo1c1bBqMJu7lR1Rpyf4H6j6tnunmdZVsNOVOcZQlH0oVItPnZ7uvefpMrNMaDw2Lhkr0YzS9FvVOPXGS1x7yFWwUJ5xy5HWwulZ0/lq/MvNe/E8Ko6Si/S8l967zbjNPWmmurWdNpzwVTjeWErKUfYr+TJcpRVn2pcziNI6CxuEb8bh61OK2yyuUPzxuvicmrgZQ6vY79DGUa3Qkt2x+D9MixzDMUVPSNTjm5pP5GVaVlvjHsbRGeHmSS4zDMVP9rP2F+b+hCWlJ7lFd7PPgTFy5uQq14x9JpfPuKT+KqzainJyeyMFrfUktbL7RPQTSOIa8xKkn6+IbpL8rWZ/lNtPByl37jXVqwpq82lvK2vpPdBW639EbegOjmLx8/Nwbhe06lS6hHj5XrP8Ku+W09F0B4MsNRtPETeImteW3i6KfXFa5drs+B3VGjGEVCEYxjFWjGKUYpcElsOpQ0fq5y/JxsTpiK+Wir972eHXxtuKDot0Tw+AjeKz12rTrTSzNb4x9iPVyu2dIAdOMVFWWw4NSpOpJym7sAA9MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACqxmgMHWd6mFw85P1nRhm/Na5VVfB7oqWv+FS9yrWiu5TsdUDFwi9qNsMRWh0JtbmzkF4N9F/7vJ/9et/5m5heg+jKezCUn77nU/ztnRg8+HDsRlLFV5KznJ8X7mpg8BRoq1KjSpLhSpxpr+VG2AZmja7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z"
+      alt="logo"
+      height="70"
+      width="70"
+      style="border-radius: 90%"
+    />
+      <a class="navbar-brand" href="">.  READING CLUB</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#para">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#part2">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#LOGIN">LOGIN</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <img
+      class="object"
+      src="https://thumbs.dreamstime.com/b/people-library-person-read-young-adult-books-bookstore-students-sitting-room-bookcase-exam-preparation-vector-concept-201406455.jpg"
+    />
+    <div id="para">
+      <h1 class="first">Let's Talk About What Is Reading Club</h1>
+      <p>
+        <em
+          >Reading club is a reading group, usually consisting of a number of
+          people who read and talk about books based on a topic or an
+          agreed-upon reading list. It's common for reading clubs to choose a
+          specific book to read and discuss at the same time. Formal book clubs
+          meet on a regular basis at a set location. Most reading clubs meet
+          monthly in order to give members time to read the next book. Reading
+          clubs can be focused on literary critique or on less academic topics.
+          Some reading clubs are focused on a certain genre, such as romance or
+          horror. There are even book clubs dedicated to a particular author or
+          series. Whatever reading material you prefer, if you can't find a book
+          club for it why not think about starting your own? Deciding what to
+          read in your club can be hard, especially if your club lacks a theme.
+          Many books come with lists of discussion questions at the end, which
+          are perfect for starting conversations. Books can be chosen as a group
+          or by the club leader. Some clubs rotate who chooses the reading
+          material.</em
+        >
+      </p>
+    </div>
+
+    <center>
+      <hr />
+    </center>
+
+    <div id="part2">
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+          id="read"
+        >
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="https://cdni.iconscout.com/illustration/premium/thumb/girl-reading-book-in-school-library-4293113-3561229.png"
+            />
+          </div>
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+          >
+            <h1 class="second">How to Start a Reading Club</h1>
+            <ol>
+              <em>
+                <li>1. Determine What Type of reading Club You Want to Host</li>
+                <li>2. If You're Meeting in Person, Find Somewhere to Meet</li>
+                <li>3. Think About How Members Will Access the Books</li>
+                <li>4. Decide Where Your Reading Club Will Meet</li>
+                <li>5. Decide How You’ll Choose Books</li>
+                <li>6. Think About How Members Will Access the Books</li>
+              </em>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <center>
+        <hr />
+      </center>
+
+      
+      <h1>Benifits Of Reading Club</h1>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <em>
+          <div class="carousel-item active">
+            <h3>Helps You Engage Deeper With the Book.</h3>
+          </div>
+          <div class="carousel-item">
+            <h3>Encourages Critical Thinking.</h3>
+          </div>
+          <div class="carousel-item">
+            <h3>Keeps Your Brain Sharp.</h3>
+          </div>
+          <div class="carousel-item">
+            <h3>Helps You Make New Friends.</h3>
+          </div>
+          <div class="carousel-item">
+            <h3>Can Improve Writing Skills.</h3>
+          </div>
+        </em>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <center>
+      <hr />
+      <div id="LOGIN">
+        <div class="loginpage">
+          <h2>Login</h2>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" placeholder="Email"></ion-icon>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="Password" placeholder="Password " />
+          </div>
+          <div class="remember">
+            <label><input type="checkbox" />Remember</label>
+            <a class="forgot" href="#">Forgot Password?</a>
+          </div>
+
+          <button type="button" class="btn btn-dark btn-lg download-button">
+            Login
+          </button>
+        </div>
+      </div>
+    </center>
+
+   
+
+
+
+    
+
+    
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+    
